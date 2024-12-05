@@ -1,9 +1,8 @@
-||||
-| :- | :-: | -: |
+| Versi | Penulis |
+|-------|----|
+| 1.0 | [Kang Cahya](https://github.com/dyazincahya) |
 
-**BAB I**
-
-**NATIVESCRIPT**
+# BAB I : NATIVESCRIPT
 
 ![Nativescript Logo](Aspose.Words.f55b9684-5df2-401c-b5eb-bb8dfb08d64a.001.png)
 
@@ -17,8 +16,13 @@ Nativescript adalah sebuah *Framework* (Kerangka Kerja) yang dapat membantu Anda
 
 Nativescript sendiri *“bisa di bilang”* salah satu produk dari Progress yang bersifat Open Source. Di awal kemunculannya, nama lengkap Nativescript adalah *Telerik Nativescript*, namun komunitasnya sendiri menyebutnya dengan Nativescript saja. Tercermin dari Command Line Interface (CLI) yang dimiliki Nativescript yang selalu diawali dengan TNS yang merupakan akronim dari *Telerik Nativescript*, berikut adalah beberapa Command Line Nativescript di awal-awal: 
 
-|<p><br>tns run android </p><p>tns platform remove PLATFORM\_NAME </p><p>tns build android </p><p>tns plugin add PLUGIN\_PACKAGE\_NAME </p><p>etc . . .</p>|
-| :- |
+```bash
+tns run android
+tns platform remove PLATFORM_NAME
+tns build android
+tns plugin add PLUGIN_PACKAGE_NAME
+etc . . .
+```
 
 Saya sendiri mengenal Nativescript sejak versi 3.x.x kurang lebih sekitar semester pertama tahun 2017 (agak kurang mengingatnya). Impresi pertama Saya saat mencoba Nativescript sangatlah luar biasa, bagaimana tidak, hanya dengan menggunakan kode Javascript Saya bisa membuat sebuah aplikasi android yang *Smooth* dan lumayan cepat. Ditambah gestur-Nya yang tidak seperti web, ini mirip seperti aplikasi android yang menggunakan bahasa Native (Java). 
 
@@ -28,8 +32,13 @@ Pengembangan Nativescript terus dilakukan sampai suatu ketika, sekitar akhir tah
 
 Banyak perubahan yang dilakukan semenjak tanggung jawab Nativescript diambil alih oleh nStudio, saat ini Nativescript hanya bernama Nativescript, sudah tidak menggunakan nama *Telerik* lagi, begitu pun ke bagian dalam-dalamnya, salah satunya CLI dan Core Modul. Yang mulanya Command Line menggunakan perintah TNS, sekarang hanya NS saja. lalu modul core Nativescript yang mulanya bernama *tns\_modules* sekarang berubah jadi *@nativescript/core.*
 
-|<p><br>ns run android  </p><p>ns platform remove PLATFORM\_NAME </p><p>ns build android </p><p>ns plugin add PLUGIN\_PACKAGE\_NAME </p><p>etc . . .</p>|
-| :- |
+```bash
+ns run android
+ns platform remove PLATFORM_NAME
+ns build android
+ns plugin add PLUGIN_PACKAGE_NAME
+etc . . .
+```
 
 Ada juga perubahan dari sisi *Branding*, yang mana pada logo lama berwarna biru tegas dengan huruf N yang besar dan padding pada Box-Nya tipis, sehingga huruf N lebih dekat dengan tepi Box. Kemudian pada logo baru, warna birunya agak bias ke abu-abuan dengan huruf N yang lebih kecil dan padding pada Box lebih tebal, sehingga huruf N lebih mempunyai jarak dari tepi Box.
 
@@ -69,8 +78,14 @@ Walau di Nativescript mempunyai banyak rasa namun hanya beberapa yang bisa di bi
 
 Kenapa Saya katakan sudah matang? Alasannya karena 3 rasa di atas sudah mempunyai dokumentasi yang baik, dan dari segi kode bisa di bilang stabil, begitu pun plugin-pluginnya. Tidak matang bukan berarti tidak bagus, setiap orang punya selera rasa yang berbeda-beda, dari pada berdebat soal rasa mana yang lebih baik, mending Anda mulai mencobanya dan rasakan rasa mana yang menurut Anda paling enak. Anda dapat memulainya dengan mengetikan perintah berikut jika ingin membuat Proyek baru di Nativescript.
 
-|<p><br>ns create myFirstApp --angular // or --ng for short</p><p>ns create myFirstApp –vue</p><p>ns create myFirstApp --vue --ts // for vue with typescript</p><p>ns create myFirstApp --react</p><p>ns create myFirstApp --js</p><p>ns create myFirstApp –svelte</p><p></p>|
-| :- |
+```bash
+ns create myFirstApp --angular // or --ng for short
+ns create myFirstApp –vue
+ns create myFirstApp --vue --ts // for vue with typescript
+ns create myFirstApp --react
+ns create myFirstApp --js
+ns create myFirstApp –svelte
+```
 
 **1.3 RUNTIME**
 
@@ -90,8 +105,25 @@ Saat ini Nativescript telah menambahkan Runtime baru untuk VisionOS, yang mana d
 
 Anda dapat menjalankan perintah berikut untuk memulai membangun aplikasi untuk VisionOS :
 
-|<p><br>// Javascript</p><p>ns create myApp --vision</p><p></p><p>// Angular</p><p>ns create myApp --vision-ng</p><p></p><p>// ReactJS</p><p>ns create myApp --vision-react</p><p></p><p>// SolidJS</p><p>ns create myApp --vision-solid</p><p></p><p>// Svelte</p><p>ns create myApp --vision-svelte</p><p></p><p>// Vue (3.x)</p><p>ns create myApp --vision-vue</p><p></p>|
-| :- |
+```bash
+// Javascript
+ns create myApp --vision
+
+// Angular
+ns create myApp --vision-ng
+
+// ReactJS
+ns create myApp --vision-react
+
+// SolidJS
+ns create myApp --vision-solid
+
+// Svelte
+ns create myApp --vision-svelte
+
+// Vue (3.x)
+ns create myApp --vision-vue
+```
 
 Lengkapnya Anda bisa mengunjungi laman dokumentasi Nativescript di sini :
 
@@ -109,16 +141,74 @@ V8 adalah sebuah Engine yang dibuat oleh Google yang mana ini berfungsi untuk me
 
 Lalu ada Bridge, yang mana Bridge ini berfungsi untuk menghubungkan kode Javascript dengan API native Android, dan memungkinkan interaksi dua arah. Jadi dengan adanya Bridge ini, Anda dapat menuliskan bahasa Native android Java di dalam file Javascript.
 
-|<p><br>/\* sample.js \*/</p><p> </p><p>import { Utils } from "@nativescript/core";</p><p> </p><p>export function saveToPhoneBook() {</p><p>`  `const contact = {</p><p>`    `name: "Kang Cahya",</p><p>`    `phoneNumber: "08123456789",</p><p>`    `email: "admin@kang-cahya.com",</p><p>`    `address: "123 Main St, Indonesia",</p><p>`    `company: "ABC Company",</p><p>`    `jobTitle: "Software Engineer",</p><p>`    `notes: "This is a sample note.",</p><p>`    `website: "https://kang-cahya.com",</p><p>`  `};</p><p>`  `const uri = android.net.Uri.parse("content://contacts/people/");</p><p>`  `const intent = new android.content.Intent(</p><p>`    `android.content.Intent.ACTION\_INSERT,</p><p>`    `uri</p><p>`  `);</p><p> </p><p>`  `intent.setType(android.provider.ContactsContract.Contacts.CONTENT\_TYPE);</p><p> </p><p>`  `// Basic Information</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.NAME, contact.name);</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.PHONE, contact.phoneNumber);</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.EMAIL, contact.email);</p><p> </p><p>`  `// Address Information</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.POSTAL, contact.address);</p><p> </p><p>`  `// Organization</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.COMPANY, contact.company);</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.JOB\_TITLE, contact.jobTitle);</p><p> </p><p>`  `// Additional Information</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.NOTES, contact.notes);</p><p>`  `intent.putExtra(android.provider.ContactsContract.Intents.Insert.WEBSITE, contact.website);</p><p> </p><p>`  `Utils.android.getCurrentActivity().startActivity(intent);</p><p>}</p>|
-| :- |
+```javascript
+/* sample.js */
+import {
+    Utils
+} from "@nativescript/core";
+export function saveToPhoneBook() {
+    const contact = {
+        name: "Kang Cahya",
+        phoneNumber: "08123456789",
+        email: "admin@kang-cahya.com",
+        7
+        address: "123 Main St, Indonesia",
+        company: "ABC Company",
+        jobTitle: "Software Engineer",
+        notes: "This is a sample note.",
+        website: "https://kang-cahya.com",
+    };
+    const uri = android.net.Uri.parse("content://contacts/people/");
+    const intent = new android.content.Intent(
+        android.content.Intent.ACTION_INSERT,
+        uri
+    );
+    intent.setType(android.provider.ContactsContract.Contacts.CONTENT_TYPE);
+    // Basic Information
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.NAME, contact.name);
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.PHONE,
+        contact.phoneNumber);
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.EMAIL, contact.email);
+    // Address Information
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.POSTAL, contact.address);
+    // Organization
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.COMPANY, contact.company);
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.JOB_TITLE, contact.jobTitle);
+    // Additional Information
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.NOTES, contact.notes);
+    intent.putExtra(android.provider.ContactsContract.Intents.Insert.WEBSITE, contact.website);
+    Utils.android.getCurrentActivity().startActivity(intent);
+}
+```
 
 Kode di atas adalah contoh kode sederhana berfungsi untuk mengirimkan data nomor Handphone pada default aplikasi kontak yang ada di Android. Ada juga contoh lain, kode di bawah ini berfungsi untuk menampilkan Toast dengan menggunakan bahasa Native Java Android yang di tulis di dalam file Javascript :
 
-|<p><br>/\*\* sample.js \*\*/</p><p><br>import { fromObject } from "@nativescript/core";</p><p> </p><p>export function onPageLoaded(args) {</p><p>`  `const page = args.object;</p><p>`  `page.bindingContext = fromObject({});</p><p>}</p><p> </p><p>export function showToast() {</p><p>`  `const context = Application.android.foregroundActivity || Application.android.startActivity;</p><p>`  `const Toast = android.widget.Toast;</p><p>`  `Toast.makeText(context, "Hello from Nativescript!", Toast.LENGTH\_SHORT).show();</p><p>}</p>|
-| :- |
+```javascript
+/** sample.js **/
+import {
+    fromObject
+} from "@nativescript/core";
+export function onPageLoaded(args) {
+    const page = args.object;
+    page.bindingContext = fromObject({});
+}
+export function showToast() {
+    const context = Application.android.foregroundActivity || Application.android.startActivity;
+    const Toast = android.widget.Toast;
+    Toast.makeText(context, "Hello from Nativescript!", Toast.LENGTH_SHORT).show();
+}
+```
 
-|<p><br><!-- sample.xml --></p><p></p><p><Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded"></p><p>`  `<ActionBar title="Nativescript Android Example" /></p><p>`  `<StackLayout></p><p>`    `<Button text="Show Toast" tap="showToast" /></p><p>`  `</StackLayout></p><p></Page></p><p></p>|
-| :- |
+```xml
+<!-- sample.xml -->
+<Page
+	xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
+	<ActionBar title="Nativescript Android Example" />
+	<StackLayout>
+		<Button text="Show Toast" tap="showToast" />
+	</StackLayout>
+</Page>
+```
 
 Selain menggunakan Bahasa Native Android Java, Anda juga bisa menggunakan bahasa native android Kotlin, Hanya saja caranya agak berbeda dengan Java, untuk kotlin Anda tidak bisa langsung mengetikan kode Kotlin-Nya pada Javascript, untuk lebih lengkapnya bagian ini akan di bahas lebih lanjut di bab berikutnya.
 
@@ -136,16 +226,72 @@ JavaScriptCore sendiri berfungsi untuk melakukan eksekusi pada Javascript/TypeSc
 
 Pada Runtime IOS pun ada Bridge, yang kurang lebih sama fungsinya seperti pada Runtime android.
 
-|<p><br>/\* sample.js \*/</p><p> </p><p>import { Utils } from "@nativescript/core";</p><p> </p><p>export function saveToPhoneBook() {</p><p>`  `const phoneNumber = "1234567890";</p><p>`  `const url = `telprompt:${phoneNumber}`;</p><p>`  `Utils.ios.openURL(url);</p><p>}</p>|
-| :- |
+```javascript
+/* sample.js */
+
+
+import {
+    Utils
+} from "@nativescript/core";
+
+
+export function saveToPhoneBook() {
+
+    const phoneNumber = "1234567890";
+
+    const url = telprompt: $ {
+        phoneNumber
+    };
+
+    Utils.ios.openURL(url);
+
+}
+```
 
 Kode di atas adalah contoh kode sederhana berfungsi untuk mengirimkan data nomor Handphone pada default aplikasi kontak yang ada di IOS. Ada juga contoh lain, berikut adalah contoh untuk memunculkan sebuah alert saat tombol di tekan menggunakan kode native di IOS yang di tulis di dalam file Javascript :
 
-|<p><br>/\* sample.js \*/</p><p> </p><p>import { fromObject } from "@nativescript/core";</p><p> </p><p>export function onPageLoaded(args) {</p><p>`  `const page = args.object;</p><p>`  `page.bindingContext = fromObject({});</p><p>}</p><p></p><p>export function showAlert() {</p><p>`  `const alertController = UIAlertController.alertControllerWithTitleMessagePreferredStyle("Nativescript", "Hello from Nativescript!", UIAlertControllerStyle.UIAlertControllerStyleAlert);</p><p>`  `const alertAction = UIAlertAction.actionWithTitleStyleHandler("OK", UIAlertActionStyle.UIAlertActionStyleDefault, null);</p><p>`  `alertController.addAction(alertAction);</p><p>`  `const topViewController = UIApplication.sharedApplication.keyWindow.rootViewController;</p><p>`  `topViewController.presentViewControllerAnimatedCompletion(alertController, true, null);</p><p>}</p>|
-| :- |
+```javascript
+/* sample.js */
 
-|<p><br><!-- sample.xml --></p><p> </p><p><Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded"></p><p>`  `<ActionBar title="Nativescript iOS Example" /></p><p>`  `<StackLayout></p><p>`    `<Button text="Show Alert" tap="showAlert" /></p><p>`  `</StackLayout></p><p></Page></p>|
-| :- |
+
+import {
+    fromObject
+} from "@nativescript/core";
+
+
+export function onPageLoaded(args) {
+
+    const page = args.object;
+
+    page.bindingContext = fromObject({});
+
+}
+
+export function showAlert() {
+
+    const alertController = UIAlertController.alertControllerWithTitleMessagePreferredStyle("Nativescript", "Hello from Nativescript!", UIAlertControllerStyle.UIAlertControllerStyleAlert);
+
+    const alertAction = UIAlertAction.actionWithTitleStyleHandler("OK", UIAlertActionStyle.UIAlertActionStyleDefault, null);
+
+    alertController.addAction(alertAction);
+
+    const topViewController = UIApplication.sharedApplication.keyWindow.rootViewController;
+
+    topViewController.presentViewControllerAnimatedCompletion(alertController, true, null);
+
+}
+```
+
+```xml
+<!-- sample.xml -->
+<Page
+	xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
+	<ActionBar title="Nativescript iOS Example" />
+	<StackLayout>
+		<Button text="Show Alert" tap="showAlert" />
+	</StackLayout>
+</Page>
+```
 
 **1.4 PERKEMBANGAN TEKNOLOGI**
 
@@ -318,9 +464,9 @@ PoolPartyFM adalah sebuah aplikasi Streaming Radio yang dibuat menggunakan Nativ
 
 Pada file *App\_Resources/Android/app.gradle* ia menambahkan *Dependencies* baru :
 
-|implementation 'com.google.android.exoplayer:exoplayer:2.19.1'|
-| :- |
-
+```gradle
+implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+```
 
 
 Kemudian ia menulis sebuah Utils pada file typescript-Nya yang diberi nama *AudioPlayer.ts,* Jika Anda membaca file tersebut, isinya adalah Kode Native Java yang di tulis di dalam Typescript, *<https://github.com/NewbieScripterRepo/PoolPartyFM/tree/main/src/utils>*. 
@@ -470,10 +616,4 @@ Nativescript adalah sebuah Framework untuk membangun aplikasi Mobile, yang mana 
 Walau pengguna Nativescript tidak sebanyak pengguna React Native, tapi komunitas Nativescript sanggatlah aktif dan solid di Discord (<https://nativescript.org/discord>). Anda dapat menanyakan perihal masalah Anda di sana. Dan para anggota di sana siap untuk membantu.
 
 Adopsi Nativescript di dunia Industri tidak sebanyak React Native, kemungkinan Anda tidak akan menemukan persyaratan lowongan kerja menggunakan Nativescript, jikalau ada pun langka. Maka dari itu, jika Anda sungguh-sungguh mempelajari Nativescript,  Anda dapat membuka peluang menghasilkan Cuan dengan Nativescript, dengan menggunakan-Nya pada proyek pribadi atau coba membuat aplikasi mandiri yang gratis atau yang berbayar dan cobalah mempublikasikan aplikasi-Nya di Google Play Store.
-
-
-
-
-|||1|
-| :- | :-: | -: |
 
