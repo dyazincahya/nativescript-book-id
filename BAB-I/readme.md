@@ -1,4 +1,4 @@
-| Versi | Ditulis | Penulis |
+| Versi | Ditulis Pada | Penulis |
 |-------|----|-----|
 | 1.0 | *Juni 2024* sampai *Agustus 2024* | [Kang Cahya](https://github.com/dyazincahya) |
 
