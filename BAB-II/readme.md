@@ -1,6 +1,6 @@
-| Versi | Penulis |
-|-------|----|
-| 1.0 | [Kang Cahya](https://github.com/dyazincahya) |
+| Versi | Ditulis | Penulis |
+|-------|----|-----|
+| 1.0 | *Juni 2024* sampai *Agustus 2024* | [Kang Cahya](https://github.com/dyazincahya) |
 
 # BAB II : PANDUAN AWAL DAN KONTEKS PENGEMBANGAN
 
