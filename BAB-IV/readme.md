@@ -1,6 +1,6 @@
-| Versi | Penulis |
-|-------|----|
-| 1.0 | [Kang Cahya](https://github.com/dyazincahya) |
+| Versi | Ditulis | Penulis |
+|-------|----|-----|
+| 1.0 | *Juni 2024* sampai *Agustus 2024* | [Kang Cahya](https://github.com/dyazincahya) |
 
 # BAB IV : MEMULAI MEMBUAT PROYEK BARU
 
@@ -288,7 +288,7 @@ ns create myFirstApp --template @nativescript/template-tab-navigation
 ns create myFirstApp --template @nativescript/template-tab-navigation-ts
 ```
 
-1. **Drawer Template**
+3. **Drawer Template**
 
 ![](Aspose.Words.b14a3b81-7d5d-4edb-b1a2-136cd92e3027.005.png)
 
@@ -296,10 +296,15 @@ ns create myFirstApp --template @nativescript/template-tab-navigation-ts
 
 Template ini menyediakan tampilan bawaan berupa Drawer, sebuah menu yang muncul dari samping seperti yang ada pada gambar di atas, semua sudah terkonfigurasi dengan baik, Anda tinggal memodifikasinya sesuai yang Anda inginkan. Untuk menggunakan template ini, Anda bisa menjalankan perintah berikut
 
-|<p><br>// rasa javascript  </p><p>ns create myFirstApp --template @nativescript/template-drawer-navigation  </p><p> </p><p>// rasa typescript  </p><p>ns create myFirstApp --template @nativescript/template-drawer-navigation-ts</p>|
-| :- |
+```bash
+// rasa javascript  
+ns create myFirstApp --template @nativescript/template-drawer-navigation  
+ 
+// rasa typescript  
+ns create myFirstApp --template @nativescript/template-drawer-navigation-ts
+```
 
-1. **List & Detail Template**
+4. **List & Detail Template**
 
 ![](Aspose.Words.b14a3b81-7d5d-4edb-b1a2-136cd92e3027.006.png)
 
@@ -307,8 +312,13 @@ Template ini menyediakan tampilan bawaan berupa Drawer, sebuah menu yang muncul 
 
 Template ini menyediakan tampilan bawaan berupa List yang mana ketika List tersebut di Tap maka akan berpindah ke halaman Detail dari Item List tersebut. Kurang lebih tampilannya seperti gambar di atas. Untuk menggunakan template ini, Anda bisa menjalankan perintah berikut.
 
-|<p><br>// rasa javascript   </p><p>ns create myFirstApp --template @nativescript/template-master-detail   </p><p> </p><p>// rasa typescript   </p><p>ns create myFirstApp --template @nativescript/template-master-detail -ts</p>|
-| :- |
+```bash
+// rasa javascript   
+ns create myFirstApp --template @nativescript/template-master-detail   
+ 
+// rasa typescript   
+ns create myFirstApp --template @nativescript/template-master-detail -ts
+```
 
 
 Untuk lebih lengkap seputar Template apa saja yang tersedia bisa lihat di laman Repositori Github-Nya langsung di sini:
@@ -327,8 +337,9 @@ Nativescript Preview adalah sebuah alat yang dapat Anda gunakan untuk meninjau s
 
 Untuk cara lokal tentunya Anda menulis kode Nativescript pada perangkat lokal Anda dan Anda dapat menjalankan perintah berikut :
 
-|<br>ns preview|
-| :- |
+```bash
+ns preview
+```
 
 Perintah tersebut berfungsi untuk melakukan setup atau menjalankan Nativescript Preview secara otomatis pada proyek aplikasi di perangkat lokal Anda. Kemudian pada  tampilan Command Line Anda akan muncul sebuah gambar QR Code besar yang harus Anda pindai menggunakan aplikasi *Nativescript Preview* yang dapat Anda unduh di Google Play Store atau App Store. Berikut adalah tangkapan layar setelah perintah *ns preview* di jalankan.
 
@@ -361,9 +372,7 @@ Fungsionalitas NativeScript dapat diperluas melalui plugin. Terkadang, ada beber
 
 Ada banyak plugin yang dapat Anda gunakan di Nativescript, dari mulai yang Official atau buatan dari komunitas. Secara umum semua plugin Nativescript Anda dapat cari di sini <https://market.nativescript.org>. 
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.b14a3b81-7d5d-4edb-b1a2-136cd92e3027.008.png)
+![A screenshot of a computer Description automatically generated](Aspose.Words.b14a3b81-7d5d-4edb-b1a2-136cd92e3027.008.png)
 
 ***Gambar 4.8 Nativescript Marketplace***
 
@@ -382,11 +391,11 @@ Anda dapat menemukan plugin resmi NativeScript pada halaman web dokumentasi. Di 
 Ada banyak sekali plugin yang dibuat oleh komunitas, namun tidak semua plugin memiliki dukungan yang baik pada NativeScript. Terkadang, plugin tersebut dapat menyebabkan Error, kurang stabil, atau minim dokumentasi, sehingga menyulitkan penggunaannya. Berikut ini adalah beberapa pengembang plugin yang direkomendasikan oleh komunitas dan dapat Anda gunakan.
 
 1. <https://github.com/nstudio/nativescript-plugins> 
-1. <https://github.com/nativescript-community> 
-1. <https://github.com/NativeScript-Use/NativeScript-Use>
-1. <https://github.com/triniwiz/nativescript-plugins>
-1. <https://github.com/klippa-app> 
-1. <https://github.com/AngelEngineering/nativescript-plugins>
+2. <https://github.com/nativescript-community> 
+3. <https://github.com/NativeScript-Use/NativeScript-Use>
+4. <https://github.com/triniwiz/nativescript-plugins>
+5. <https://github.com/klippa-app> 
+6. <https://github.com/AngelEngineering/nativescript-plugins>
 
 Daftar di atas hanyalah sebuah rekomendasi; Anda juga dapat mencari sendiri plugin yang Anda inginkan di GitHub.
 
