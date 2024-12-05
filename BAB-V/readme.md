@@ -152,6 +152,7 @@ Kode CSS di atas merupakan sebuah CSS untuk membuat sebuah animasi bounce, objek
 Binding data adalah sebuah kunci di Nativescript, yang mana ini adalah konsep dasar yang perlu Anda pahami. Ini adalah sebuah proses mengalirkan data dari Model ke antarmuka aplikasi (UI), kurang lebih prosesnya sama seperti konsep MVC, di mana dalam 1 modul akan berisi 3 File, namun pada praktiknya saya lebih suka menyatukan proses Model dan Controller dalam 1 File, jadi dalam 1 modul biasanya hanya terdiri dari 2 File saja.
 
 ![](Aspose.Words.22efd09b-17e9-4bbb-a77e-a9acc47957ef.004.png)
+
 ***Gambar 5.4 Konsep MVC dan Penamaan File modul di Nativescript***
 
 
