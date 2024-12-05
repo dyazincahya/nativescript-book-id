@@ -31,18 +31,14 @@ Saat ini, NativeScript mendukung tiga Runtime, yaitu Android, iOS, dan VisionOS.
 
 Semua materi yang ada di dalam buku ini memiliki sebuah demo yang tersedia di aplikasi **NS Book Demo by Kang Cahya**. Anda dapat mengunduh aplikasi tersebut melalui Google Play Store dengan mencarinya menggunakan kata kunci **"NS Book Demo by Kang Cahya"**. Tidak semua BAB dalam buku ini memiliki demo. Hanya BAB yang membahas hal-hal teknis yang disertai dengan demo.
 
-![A screenshot of a cell phone
-
-Description automatically generated](Aspose.Words.e6fff1dc-4ecb-42e3-8e0f-dfd955273f99.001.png)
+![A screenshot of a cell phone Description automatically generated](Aspose.Words.e6fff1dc-4ecb-42e3-8e0f-dfd955273f99.001.png)
 
 ***Gambar 2.1 Aplikasi NS Book Demo by Kang Cahya***
 
 
 Selain itu, untuk mempermudah, Anda dapat melakukan pemindaian pada QR Code di bawah ini untuk mendapatkan tautan langsung ke Google Play Store, sehingga Anda dapat mengunduh aplikasi Demo-Nya dengan mudah.
 
-![A qr code with a logo
-
-Description automatically generated](Aspose.Words.e6fff1dc-4ecb-42e3-8e0f-dfd955273f99.002.png)
+![A qr code with a logo Description automatically generated](Aspose.Words.e6fff1dc-4ecb-42e3-8e0f-dfd955273f99.002.png)
 
 ***Gambar 2.2 QR Code URL Google Play Store Aplikasi Demo***
 
