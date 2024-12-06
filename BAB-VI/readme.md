@@ -4,7 +4,7 @@
 
 # BAB VI : KOMPONEN UI
 
-Anda dapat mengunduh file PDF-nya untuk membaca materi BAB VI ini
+Dikarenakan pembahasan BAB ini lumayan cukup panjang, sehingga tidak memungkinkan untuk di letakan pada halaman ini, Anda dapat mengunduh langsung file PDF [6. BAB VI - KOMPONEN UI_wm.pdf](6.%20BAB%20VI%20-%20KOMPONEN%20UI_wm.pdf) untuk membaca materi BAB VI ini. Untuk rincian materinya sendiri kurang lebih sebagai berikut:
 
    1. Navigation Components
       1. Page
