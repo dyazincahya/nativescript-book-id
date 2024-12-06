@@ -1,7 +1,7 @@
 # Nativescript Book ID
 > Buku "Nativescript by Javascript" dalam bahasa Indonesia.
 
-NativeScript adalah sebuah framework yang memungkinkan Anda membangun aplikasi seluler untuk platform Android dan iOS. Terbaru, NativeScript juga mendukung pengembangan aplikasi untuk platform macOS dan VisionOS.
+NativeScript adalah sebuah framework yang memungkinkan Anda membangun aplikasi seluler untuk platform Android dan iOS. Terbaru, NativeScript juga mendukung pengembangan aplikasi untuk platform macOS dan VisionOS hanya dengan menggunakan JavaScript.
 
 <img src="COVER-BOOK.png" height="720" />
 
