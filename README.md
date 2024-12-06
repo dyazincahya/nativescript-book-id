@@ -1,6 +1,7 @@
 # Nativescript Book ID
 Buku "Nativescript by Javascript" dalam bahasa Indonesia.
 
+<img src="COVER-BOOK.png" height="500" />
 
 
 
