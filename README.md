@@ -1,5 +1,5 @@
 # Nativescript Book ID
-> Buku "Nativescript by Javascript" dalam bahasa Indonesia.
+> Buku "NativeScript by JavaScript" dalam bahasa Indonesia. Buku ini merupakan pembaharuan dari Buku Pertama ([https://www.gramedia.com/products/membuat-aplikasi-mobile-native-dengan-javascript-by-nativescript](https://www.gramedia.com/products/membuat-aplikasi-mobile-native-dengan-javascript-by-nativescript))
 
 NativeScript adalah sebuah framework yang memungkinkan Anda membangun aplikasi seluler untuk platform Android dan iOS. Terbaru, NativeScript juga mendukung pengembangan aplikasi untuk platform macOS dan VisionOS hanya dengan menggunakan JavaScript.
 
