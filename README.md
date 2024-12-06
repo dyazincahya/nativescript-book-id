@@ -198,8 +198,11 @@ NewbieScripterRepo. (n.d.). *PoolPartyFM*. GitHub. Diakses pada 20 Agustus 2024,
 
 Google LLC. (n.d.). *ExoPlayer*. GitHub. Diakses pada 20 Agustus 2024, dari <https://github.com/google/ExoPlayer>
 
-## Demo Aplikasi
+## Aplikasi Demo
 Untuk aplikasi demo dapat di unduh langsung lewat [Google Play Store](https://play.google.com/store/apps/details?id=com.kang.cahya.apps.sampleDemoOfNativescriptBook)
+
+## Kode Aplikasi Demo
+Anda dapat melihat kode dari aplikasi demo [Disini](https://github.com/dyazincahya/ns-book-demo)
 
 ## Ditulis Pada
 *Juni 2024* sampai *Agustus 2024*
