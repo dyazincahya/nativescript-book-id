@@ -201,8 +201,10 @@ Google LLC. (n.d.). *ExoPlayer*. GitHub. Diakses pada 20 Agustus 2024, dari <htt
 ## Demo Aplikasi
 Untuk aplikasi demo dapat di unduh langsung lewat [Google Play Store](https://play.google.com/store/apps/details?id=com.kang.cahya.apps.sampleDemoOfNativescriptBook)
 
-## Penulis
+## Ditulis Pada
+*Juni 2024* sampai *Agustus 2024*
 
+## Penulis
 Kang Cahya
 
 [Github](https://github.com/dyazincahya) | [www.kang-cahya.com](http://www.kang-cahya.com) | [Google Play Store](https://play.google.com/store/apps/dev?id=8941046243892038548)
