@@ -3,10 +3,11 @@
 
 NativeScript adalah sebuah framework yang memungkinkan Anda membangun aplikasi seluler untuk platform Android dan iOS. Terbaru, NativeScript juga mendukung pengembangan aplikasi untuk platform macOS dan VisionOS hanya dengan menggunakan JavaScript.
 
+## Komentar atau Tanggapan Tentang Buku Ini
+[Kirim Komentar atau Tanggapan Anda Disini](https://github.com/dyazincahya/nativescript-book-id/discussions/1)
+
+## Sampul Buku
 <img src="COVER-BOOK.png" height="720" />
-
-
-
 
 ## KATA PENGANTAR
 
